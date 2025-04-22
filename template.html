@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>{{nimi}}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .ominaisuudet table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    .ominaisuudet td {
+      padding: 6px 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>{{nimi}}</h1>
+  <img src="{{paakuva}}" alt="Pääkuva" />
+  <div class="ominaisuudet">
+    <table>
+      {{ominaisuudet}}
+    </table>
+  </div>
+  <div class="lisakuvat">
+    {{lisakuvat}}
+  </div>
+</body>
+</html>
